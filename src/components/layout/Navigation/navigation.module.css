@@ -1,0 +1,19 @@
+.active {
+  color: var(--active-txt);
+}
+
+.normal {
+  color: var(--mid-gray-txt);
+  text-decoration: none;
+}
+
+.nav {
+  background: var(--card-bg);
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 50px;
+}

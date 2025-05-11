@@ -1,0 +1,12 @@
+.bodyWrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
+    height: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
