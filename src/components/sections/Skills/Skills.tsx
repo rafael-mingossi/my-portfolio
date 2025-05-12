@@ -95,7 +95,7 @@ const skillsData = [
 export default function Skills({ id }: SectionProps) {
   return (
     <section id={id} className={styles.sectionWrapper}>
-      <SectionHeader />
+      <SectionHeader title="SKILLS" subtitle="specialities" />
 
       <div className={styles.cardsWrapper}>
         {skillsData.map((skill, index) => (

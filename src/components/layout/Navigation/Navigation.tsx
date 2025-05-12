@@ -10,7 +10,7 @@ import LinkedInIcon from "@/components/common/icons/LinkedInIcon";
 const navigationItems = [
   { href: "#home", label: "Home" },
   { href: "#skills", label: "Skills" },
-  { href: "/about", label: "About Me" },
+  { href: "#about", label: "About Me" },
   { href: "/projects", label: "Projects" },
 ];
 

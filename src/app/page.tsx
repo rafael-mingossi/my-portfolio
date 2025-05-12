@@ -1,6 +1,7 @@
 import styles from "./page.module.css";
 import Hero from "@/components/sections/Hero/Hero";
 import Skills from "@/components/sections/Skills/Skills";
+import AboutMe from "@/components/sections/AboutMe/AboutMe";
 
 export default function Page() {
   return (
@@ -12,6 +13,7 @@ export default function Page() {
       </div>
       <Hero id="home" />
       <Skills id="skills" />
+      <AboutMe id="about" />
     </div>
   );
 }

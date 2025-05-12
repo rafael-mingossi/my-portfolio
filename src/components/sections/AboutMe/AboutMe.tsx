@@ -1,6 +1,14 @@
-export default function AboutMe() {
+import SectionHeader from "@/components/common/SectionHeader/SectionHeader";
+import styles from "./about.module.css";
+
+interface SectionProps {
+  id: string;
+}
+
+export default function AboutMe({ id }: SectionProps) {
   return (
-    <div>
+    <section id={id} className={styles.sectionWrapper}>
+      <SectionHeader title="ABOUT ME" subtitle="short story long" />
       <p>
         With over 4 years in the JavaScript ecosystem, I've built my career
         transforming designs into seamless digital experiences that users love
@@ -21,6 +29,6 @@ export default function AboutMe() {
         problem-solving, believing that the best interfaces are those users
         don't even notice they're using.
       </p>
-    </div>
+    </section>
   );
 }
