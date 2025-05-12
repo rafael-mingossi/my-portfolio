@@ -1,9 +1,13 @@
 import styles from "./hero.module.css";
 import Image from "next/image";
 
-export default function Hero() {
+interface SectionProps {
+  id: string;
+}
+
+export default function Hero({ id }: SectionProps) {
   return (
-    <div className={styles.heroWrapper}>
+    <section id={id} className={styles.heroWrapper}>
       <div
         style={{
           width: "100%",
@@ -14,8 +18,17 @@ export default function Hero() {
       />
       <div className={styles.gradientCard}>
         <div className={styles.leftContent}>
-          <h1>This is your</h1>
-          <p>Content</p>
+          <span>
+            <h1 className={styles.h1}>Rafael Mingossi</h1>
+            <h2 className={styles.h2}>Front-End Developer</h2>
+          </span>
+          <span>
+            <p>
+              JavaScript (React and React Native) specialist with a passion for
+              clean code and pixel-perfect UI, turning complex problems into
+              elegant solutions since 2021.
+            </p>
+          </span>
         </div>
 
         <div className={styles.profileImgWrapper}>
@@ -42,6 +55,6 @@ export default function Hero() {
           flex: 1,
         }}
       />
-    </div>
+    </section>
   );
 }

@@ -1,0 +1,55 @@
+.skillCard {
+  display: flex;
+  flex-direction: column;
+  background: var(--card-bg);
+  width: 100%;
+  max-width: 369px;
+  height: 200px;
+  padding: 24px 40px;
+  align-items: center;
+  z-index: 1;
+}
+
+.cardIconWrapper {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  width: 55px;
+  height: 55px;
+}
+
+.decorationImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+.skillTitle {
+  color: var(--active-txt);
+  font-weight: 500;
+}
+
+.separator {
+  height: 2px;
+  width: 25px;
+  background: var(--blue-cta);
+  border-radius: 5px;
+  margin: 10px 0;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    background: var(--blue-cta);
+    right: -12px;
+    top: 0;
+    height: 2px;
+    width: 8px;
+  }
+}
+
+.description {
+  text-align: center;
+  font-size: 14px;
+}

@@ -7,21 +7,23 @@
   width: 100%;
   flex: 1;
   font-family: var(--font-inter);
-  max-width: 1280px;
-  /*background-image: repeating-linear-gradient(*/
-  /*  to right,*/
-  /*  transparent 0px,*/
-  /*  transparent 50px,*/
-  /*  rgba(255, 255, 255, 0.01) 50px,*/
-  /*  rgba(255, 255, 255, 0.01) 51px,*/
-  /*  transparent 51px,*/
-  /*  transparent 61px*/
-  /*);*/
+  max-width: 1140px;
+  overflow-y: auto;
+  position: relative;
 }
 
-.page h1 {
-  font-family: var(--font-space-grotesk);
-  font-weight: 300;
+.gridWrapper {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(12, 80.33px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  gap: 16px;
+
+  div {
+    border: 1px solid var(--lines);
+  }
 }
 
 /* Enable hover only on non-touch devices */
