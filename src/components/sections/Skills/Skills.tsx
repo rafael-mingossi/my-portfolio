@@ -11,6 +11,7 @@ import TailwindIcon from "@/components/common/icons/TailwindIcon";
 import SkillCard from "@/components/common/SkillCard/SkillCard";
 import HtmlIcon from "@/components/common/icons/HtmlIcon";
 import GitHubIcon from "@/components/common/icons/GitHubIcon";
+import SectionHeader from "@/components/common/SectionHeader/SectionHeader";
 
 interface SectionProps {
   id: string;
@@ -94,7 +95,7 @@ const skillsData = [
 export default function Skills({ id }: SectionProps) {
   return (
     <section id={id} className={styles.sectionWrapper}>
-      <h1>Skills</h1>
+      <SectionHeader />
 
       <div className={styles.cardsWrapper}>
         {skillsData.map((skill, index) => (

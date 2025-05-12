@@ -9,6 +9,7 @@
   --dark-gray-txt: #434345;
   --white-txt: #e3e3e5;
   --btn-bg: #19181e;
+  --hover: #ad13fb;
 }
 
 html,
@@ -31,7 +32,7 @@ body {
 
 section {
   min-height: 100vh;
-  scroll-margin-top: 80px; /* Adjust based on your header height */
+  /*scroll-margin-top: 80px; */
 }
 
 * {

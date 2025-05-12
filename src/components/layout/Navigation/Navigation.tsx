@@ -3,7 +3,9 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./navigation.module.css";
-import React, { useState, useEffect } from "react";
+import React from "react";
+import GitHubIcon from "@/components/common/icons/GitHubIcon";
+import LinkedInIcon from "@/components/common/icons/LinkedInIcon";
 
 const navigationItems = [
   { href: "#home", label: "Home" },
@@ -28,7 +30,10 @@ export default function Navigation() {
 
   return (
     <nav className={styles.nav}>
-      <p>Social Icons</p>
+      <div className={styles.leftBlock}>
+        <GitHubIcon width={20} height={20} />
+        <LinkedInIcon width={20} height={20} />
+      </div>
       <span className={styles.linksWrapper}>
         {navigationItems.map((item) => (
           <Link
@@ -41,7 +46,7 @@ export default function Navigation() {
           </Link>
         ))}
       </span>
-      <p>Download CV Btn</p>
+      <button className={styles.actionCta}>My Resume</button>
     </nav>
   );
 }

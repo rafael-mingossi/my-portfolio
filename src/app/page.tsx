@@ -6,18 +6,9 @@ export default function Page() {
   return (
     <div className={styles.page}>
       <div className={styles.gridWrapper}>
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
-        <div />
+        {Array.from({ length: 12 }).map((_, i) => (
+          <div key={i} />
+        ))}
       </div>
       <Hero id="home" />
       <Skills id="skills" />

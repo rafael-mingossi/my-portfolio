@@ -32,7 +32,7 @@
 
 .separator {
   height: 2px;
-  width: 25px;
+  width: 15px;
   background: var(--blue-cta);
   border-radius: 5px;
   margin: 10px 0;
@@ -43,6 +43,16 @@
     position: absolute;
     background: var(--blue-cta);
     right: -12px;
+    top: 0;
+    height: 2px;
+    width: 8px;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    background: var(--blue-cta);
+    left: -12px;
     top: 0;
     height: 2px;
     width: 8px;
