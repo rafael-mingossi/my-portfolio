@@ -8,7 +8,7 @@ interface SectionProps {
 export default function AboutMe({ id }: SectionProps) {
   return (
     <section id={id} className={styles.sectionWrapper}>
-      <SectionHeader title="ABOUT ME" subtitle="short story long" />
+      <SectionHeader title="ABOUT ME" subtitle="long story short" />
       <p>
         With over 4 years in the JavaScript ecosystem, I've built my career
         transforming designs into seamless digital experiences that users love

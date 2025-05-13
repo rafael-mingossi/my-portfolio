@@ -9,7 +9,7 @@
   --dark-gray-txt: #434345;
   --white-txt: #e3e3e5;
   --btn-bg: #19181e;
-  --hover: #ad13fb;
+  --hover: #0037f8;
 }
 
 html,
@@ -28,6 +28,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
 }
 
 section {

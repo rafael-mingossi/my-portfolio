@@ -45,6 +45,7 @@ export default function Hero({ id }: SectionProps) {
             width={433}
             height={577}
             quality={100}
+            priority
             className={styles.profileImg}
           />
         </div>
