@@ -5,5 +5,11 @@
   align-items: center;
   justify-content: center;
   row-gap: 40px;
-  max-width: 1000px;
+}
+
+.cardsWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-direction: row;
+  gap: 16px;
 }

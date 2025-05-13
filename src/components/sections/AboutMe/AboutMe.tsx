@@ -10,24 +10,29 @@ export default function AboutMe({ id }: SectionProps) {
     <section id={id} className={styles.sectionWrapper}>
       <SectionHeader title="ABOUT ME" subtitle="long story short" />
       <p>
-        With over 4 years in the JavaScript ecosystem, I've built my career
-        transforming designs into seamless digital experiences that users love
-        to interact with. At Atelier, I've spent the last 3+ years developing
-        responsive, component-based applications using NextJS and SASS, while
-        collaborating closely with design teams to ensure pixel-perfect
-        implementation. My experience extends beyond the front end, working with
-        AWS, GraphQL APIs, and CMS integrations. My time as a freelancer with
-        Foxxy Labs sharpened my skills in component architecture and state
-        management optimization, while my React Native work for Kiss 'n Tell APP
-        taught me the value of rapid bug resolution and clear documentation.
-        Originally from Brazil and now calling Australia home for 9 years, I
-        bring a global perspective to my work. My Bachelor's Degree in
-        Information Technology with a major in Web and Mobile Development
-        provided the foundation, but my continuous self-learning in TypeScript,
-        Tailwind, and testing frameworks keeps me at the cutting edge. I
-        approach each project with both technical precision and creative
-        problem-solving, believing that the best interfaces are those users
-        don't even notice they're using.
+        Originally from Brazil, where I built a solid career in Finance and Tax
+        for almost 10 years, I realised my true passion lay elsewhere. So my
+        wife and I decided to shake things up – we moved to Australia and have
+        called it home since 2016. Here I found my calling, graduating with a
+        Bachelor&#39;s Degree in Information Technology with a major in Web and
+        Mobile Development, which provided the foundation to officially start my
+        career as a developer.
+        <br />
+        <br />
+        Now, I bring a global perspective to my work with over 4 years in the
+        JavaScript ecosystem. I&#39;ve built my career transforming designs into
+        seamless digital experiences that users love to interact with. My
+        experience extends beyond the front end, working with AWS, GraphQL APIs,
+        and both Shopify and CMS integrations.
+        <br />
+        <br />
+        In my free time, I&#39;m exploring Java to deepen my understanding of
+        OOP paradigms – a journey I&#39;m finding fascinating – and to enhance
+        my back-end development skills. I maintain a continuous learning
+        approach with TypeScript, CSS, and testing frameworks. I approach each
+        project with both technical precision and creative problem-solving,
+        believing that the best interfaces are those users don&#39;t even notice
+        they&#39;re using.
       </p>
     </section>
   );

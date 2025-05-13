@@ -1,6 +1,7 @@
 import styles from "./skillCard.module.css";
 import Image from "next/image";
 import { ReactNode } from "react";
+import Separator from "@/components/common/Separator/Separator";
 
 interface SkillCardProps {
   title: string;
@@ -26,7 +27,7 @@ export default function SkillCard({
         {icon}
       </div>
       <p className={styles.skillTitle}>{title}</p>
-      <div className={styles.separator} />
+      <Separator />
       <p className={styles.description}>{description}</p>
     </div>
   );

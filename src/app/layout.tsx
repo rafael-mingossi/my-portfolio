@@ -4,7 +4,6 @@ import "./globals.css";
 import React from "react";
 import Navigation from "@/components/layout/Navigation/Navigation";
 import styles from "./layout.module.css";
-// import Footer from "@/components/layout/Footer/Footer";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -87,7 +86,6 @@ export default function RootLayout({
       >
         <Navigation />
         <main className={styles.main}>{children}</main>
-        {/*<Footer />*/}
       </body>
     </html>
   );

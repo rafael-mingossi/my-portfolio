@@ -1,0 +1,63 @@
+.cardWrapper {
+  width: 100%;
+  max-width: 369px;
+}
+
+.cardThumbnail {
+  width: 100%;
+  max-width: 369px;
+  height: auto;
+}
+
+.cardBottom {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    to left,
+    rgba(14, 14, 16, 1) 0%,
+    rgba(23, 23, 26, 0.23) 100%
+  );
+  width: 100%;
+  /*max-width: 369px;*/
+  height: 240px;
+  padding: 24px 40px;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.skillTitle {
+  color: var(--active-txt);
+  font-weight: 500;
+}
+
+.description {
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.decoration {
+  position: absolute;
+  bottom: 0;
+  left: -15px;
+}
+
+.iconLink {
+  display: inline-flex;
+  transition: opacity 0.2s ease;
+  background: var(--btn-black-bg);
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-inter);
+  color: var(--active-txt);
+  border-radius: 29px;
+  padding: 12px 18px;
+  font-size: 14px;
+}
+
+.iconLink:hover {
+  opacity: 0.7;
+}
