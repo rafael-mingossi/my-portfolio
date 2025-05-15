@@ -8,14 +8,7 @@ interface SectionProps {
 export default function Hero({ id }: SectionProps) {
   return (
     <section id={id} className={styles.heroWrapper}>
-      <div
-        style={{
-          width: "100%",
-          background: "#0a0a0c",
-          display: "flex",
-          flex: 1,
-        }}
-      />
+      <div className={styles.fakeBox1} />
       <div className={styles.gradientCard}>
         <div className={styles.leftContent}>
           <span>
@@ -24,9 +17,9 @@ export default function Hero({ id }: SectionProps) {
           </span>
           <span>
             <p>
-              JavaScript (React and React Native) specialist with a passion for
-              clean code and pixel-perfect UI, turning complex problems into
-              elegant solutions since 2021.
+              JavaScript specialist with a passion for clean code and
+              pixel-perfect UI, turning complex problems into elegant solutions
+              since 2021.
             </p>
           </span>
         </div>
@@ -47,15 +40,11 @@ export default function Hero({ id }: SectionProps) {
             quality={100}
             priority
             className={styles.profileImg}
+            // sizes="(max-width: 450px) 40%, (max-width: 1200px) 70%, 100%))"
           />
         </div>
       </div>
-      <div
-        style={{
-          display: "flex",
-          flex: 1,
-        }}
-      />
+      <div className={styles.fakeBox2} />
     </section>
   );
 }

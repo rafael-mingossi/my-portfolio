@@ -24,3 +24,14 @@
   color: var(--active-txt);
   font-size: 32px;
 }
+
+@media (max-width: 650px) {
+  .h4,
+  .bold {
+    font-size: 27px;
+  }
+
+  .headerTitle {
+    margin-top: 30px;
+  }
+}

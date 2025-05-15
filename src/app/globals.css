@@ -11,6 +11,7 @@
   --btn-bg: #19181e;
   --btn-black-bg: #18181d;
   --hover: #0037f8;
+  --mobile-breakpoint: 450px;
 }
 
 html,

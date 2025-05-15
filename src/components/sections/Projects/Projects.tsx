@@ -54,7 +54,7 @@ const projectsData: ProjectCardProps[] = [
 export default function Projects({ id }: SectionProps) {
   return (
     <section id={id} className={styles.sectionWrapper}>
-      <SectionHeader title="PROJECTS" subtitle="completed projects" />
+      <SectionHeader title="PROJECTS" subtitle="completed work" />
       <div className={styles.cardsWrapper}>
         {projectsData.map((project, index) => (
           <ProjectCard

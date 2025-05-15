@@ -17,7 +17,6 @@
   width: 100%;
   max-width: 1300px;
   height: 100px;
-  padding: 20px 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -25,6 +24,16 @@
   position: fixed !important;
   z-index: 5;
   align-self: center;
+}
+
+.desktopMenu {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: center;
+  width: 100%;
 }
 
 .leftBlock {
@@ -60,5 +69,78 @@
 
   &:hover {
     background-color: var(--hover);
+  }
+}
+
+/*///MOBILE*/
+.menuBars {
+  width: 48px;
+  height: 24px;
+  border-radius: 1100px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 8px;
+  position: relative;
+  cursor: pointer;
+  z-index: 5;
+  transition: background-color 0.2s;
+}
+
+.menuBarsNoBg {
+  background-color: transparent;
+}
+
+.span {
+  background: black;
+  height: 1px;
+  width: 35%;
+  border-radius: 15px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition:
+    transform 0.4s,
+    width 0.3s;
+
+  &:nth-child(2) {
+    &.spanOpen {
+      width: 0;
+    }
+  }
+
+  &:first-child {
+    transform: translate(-50%, 5px);
+
+    &.spanOpen {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+
+  &:last-child {
+    transform: translate(-50%, -6px);
+
+    &.spanOpen {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+  }
+}
+
+@media (width >= 450) {
+  .menuBars {
+    display: none;
+  }
+}
+
+@media (width < 450) {
+  .nav {
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: transparent;
+  }
+
+  .desktopMenu {
+    display: none;
   }
 }

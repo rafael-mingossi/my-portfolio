@@ -12,6 +12,12 @@
   position: relative;
 }
 
+@media (width < 450px) {
+  .page {
+    padding: 0 10px;
+  }
+}
+
 .gridWrapper {
   display: grid;
   height: 100%;

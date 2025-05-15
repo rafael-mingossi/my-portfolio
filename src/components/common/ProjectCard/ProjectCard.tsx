@@ -1,7 +1,6 @@
 import styles from "./projectCard.module.css";
 import Image from "next/image";
 import Separator from "@/components/common/Separator/Separator";
-import LinkedInIcon from "@/components/common/icons/LinkedInIcon";
 import React from "react";
 
 export interface ProjectCardProps {
@@ -20,14 +19,17 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <div className={styles.cardWrapper}>
-      <Image
-        src={image}
-        alt={`${title} project`}
-        width={1120}
-        height={1070}
-        quality={100}
-        className={styles.cardThumbnail}
-      />
+      <div className={styles.imageContainer}>
+        <Image
+          src={image}
+          alt={`${title} project`}
+          fill
+          quality={90}
+          className={styles.cardThumbnail}
+          //responsiveness for 3 grid columns, Mobile -> Tablet -> Desktop
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw))"
+        />
+      </div>
       <div className={styles.cardBottom}>
         <Image
           src="/project-card-decoration.svg"
