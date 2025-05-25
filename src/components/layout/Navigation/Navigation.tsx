@@ -32,7 +32,7 @@ export default function Navigation() {
       });
     }, options);
 
-    //Observe all sections
+    // Observe all sections
     const sections = navigationItems
       .map((item) => document.querySelector(item.href))
       .filter(Boolean);
@@ -41,12 +41,10 @@ export default function Navigation() {
       if (section) observer.observe(section);
     });
 
-    //Cleanup
+    // Cleanup
     return () => {
       sections.forEach((section) => {
-        if (section) {
-          observer.unobserve(section);
-        }
+        if (section) observer.unobserve(section);
       });
     };
   }, []);
@@ -62,10 +60,17 @@ export default function Navigation() {
         element.scrollIntoView({ behavior: "smooth" });
       }
     }
+    // Close mobile menu after clicking a link
+    setIsOpen(false);
+  };
+
+  const toggleMenu = () => {
+    setIsOpen((prevState) => !prevState);
   };
 
   return (
     <nav className={styles.nav}>
+      {/* Desktop Menu */}
       <div className={styles.desktopMenu}>
         <div className={styles.leftBlock}>
           <a
@@ -88,9 +93,10 @@ export default function Navigation() {
             <LinkedInIcon width={20} height={20} />
           </a>
         </div>
-        <span className={styles.linksWrapper}>
+
+        <div className={styles.linksWrapper}>
           {navigationItems.map((item) => {
-            const sectionId = item.href.substring(1); //remove #
+            const sectionId = item.href.substring(1); // remove #
             const isActive = activeSection === sectionId;
 
             return (
@@ -104,7 +110,8 @@ export default function Navigation() {
               </Link>
             );
           })}
-        </span>
+        </div>
+
         <a
           href="/Rafael-Mingossi-Resume.pdf"
           download
@@ -113,13 +120,70 @@ export default function Navigation() {
           My Resume
         </a>
       </div>
-      <div
-        className={`${styles.menuBars} ${isOpen && styles.menuBarsNoBg}`}
-        onClick={() => setIsOpen((prevState) => !prevState)}
+
+      {/* Mobile Menu Button */}
+      <button
+        className={`${styles.menuButton} ${isOpen ? styles.menuButtonOpen : ""}`}
+        onClick={toggleMenu}
+        aria-label="Toggle navigation menu"
+        aria-expanded={isOpen}
       >
-        <span className={`${styles.span} ${isOpen && styles.spanOpen}`} />
-        <span className={`${styles.span} ${isOpen && styles.spanOpen}`} />
-        <span className={`${styles.span} ${isOpen && styles.spanOpen}`} />
+        <span className={styles.hamburgerLine} />
+        <span className={styles.hamburgerLine} />
+        <span className={styles.hamburgerLine} />
+      </button>
+
+      {/* Mobile Menu Overlay */}
+      <div
+        className={`${styles.mobileOverlay} ${isOpen ? styles.mobileOverlayOpen : ""}`}
+        aria-hidden={!isOpen}
+      >
+        <div className={styles.mobileMenu}>
+          <div className={styles.mobileHeader}>
+            <div className={styles.mobileIcons}>
+              <a
+                href="https://github.com/rafael-mingossi"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub Profile"
+                className={styles.iconLink}
+              >
+                <GitHubIcon width={24} height={24} />
+              </a>
+              <a
+                href="https://linkedin.com/in/rafaelmingossi"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn Profile"
+                className={styles.iconLink}
+              >
+                <LinkedInIcon width={24} height={24} />
+              </a>
+            </div>
+          </div>
+
+          <div className={styles.mobileLinks}>
+            {navigationItems.map((item, index) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={(e) => handleClick(e, item.href)}
+                className={styles.mobileLink}
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
+
+          <a
+            href="/Rafael-Mingossi-Resume.pdf"
+            download
+            className={styles.mobileActionCta}
+          >
+            My Resume
+          </a>
+        </div>
       </div>
     </nav>
   );

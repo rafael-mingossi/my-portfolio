@@ -37,10 +37,11 @@ export default function Hero({ id }: SectionProps) {
             alt="Rafs photo"
             width={433}
             height={577}
-            quality={100}
+            quality={90}
             priority
             className={styles.profileImg}
-            // sizes="(max-width: 450px) 40%, (max-width: 1200px) 70%, 100%))"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            fill={false}
           />
         </div>
       </div>
