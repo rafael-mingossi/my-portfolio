@@ -16,6 +16,7 @@ const projectsData: ProjectCardProps[] = [
     image: "/proj-rowi.webp",
     type: "web",
     techStack: "Next.js | TypeScript | Sass | Sanity CMS | Shopify",
+    link: "https://embellishbyrowi.com/",
   },
   {
     title: "Atelier Marketing app",
@@ -24,6 +25,7 @@ const projectsData: ProjectCardProps[] = [
     image: "/proj-atelier-mkt.webp",
     type: "web",
     techStack: "Next.js | TypeScript | Sass",
+    link: "https://atelier.co/",
   },
   {
     title: "Bvrg",
@@ -31,15 +33,17 @@ const projectsData: ProjectCardProps[] = [
       "I worked as a freelancer to help with the system design on this app",
     image: "/proj-bvrg.webp",
     type: "web",
-    techStack: "Next.js",
+    techStack: "Next.js | TypeScript | Zustand | Tailwind",
+    link: "https://www.bvrg.com.au/",
   },
   {
     title: "Atelier Platform",
     description:
-      "This is the main platform from my previous job at Atelier, it is currently in Beta for selected customers",
+      "This is the main platform from my previous job at Atelier, it is currently in Beta for selected customers only",
     image: "/proj-atelier.webp",
     type: "web",
     techStack: "Next.js | TypeScript | Sass | AWS",
+    link: "https://platform.atelier.co/",
   },
   {
     title: "Star Wars",
@@ -48,6 +52,7 @@ const projectsData: ProjectCardProps[] = [
     image: "/proj-star-wars.webp",
     type: "web",
     techStack: "Next.js | CSS",
+    link: "https://mammoth-eight.vercel.app/",
   },
 ];
 
@@ -64,6 +69,7 @@ export default function Projects({ id }: SectionProps) {
             type={project.type}
             image={project.image}
             techStack={project.techStack}
+            link={project.link}
           />
         ))}
       </div>

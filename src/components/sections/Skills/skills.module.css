@@ -15,8 +15,20 @@
   gap: 16px;
 }
 
-@media (height < 1080px) {
+@media (max-height: 699px) {
   .sectionWrapper {
-    scroll-margin-top: 60px;
+    scroll-margin-top: 50px;
+  }
+}
+
+@media (min-height: 700px) {
+  .sectionWrapper {
+    scroll-margin-top: 110px;
+  }
+}
+
+@media (min-height: 1100px) {
+  .sectionWrapper {
+    scroll-margin-top: 0;
   }
 }

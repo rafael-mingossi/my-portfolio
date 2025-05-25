@@ -108,7 +108,7 @@
   }
 }
 
-/* Mobile - smaller version */
+/* Mobile */
 @media (max-width: 640px) {
   .profileImg {
     max-width: 300px;

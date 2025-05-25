@@ -9,6 +9,7 @@ export interface ProjectCardProps {
   image: string;
   type: "mobile" | "web";
   techStack: string;
+  link: string;
 }
 
 export default function ProjectCard({
@@ -16,6 +17,7 @@ export default function ProjectCard({
   description,
   image,
   techStack,
+  link,
 }: ProjectCardProps) {
   return (
     <div className={styles.cardWrapper}>
@@ -45,10 +47,10 @@ export default function ProjectCard({
           <b>Tech Stack:</b> {techStack}
         </p>
         <a
-          href="https://linkedin.com/in/rafaelmingossi"
+          href={link}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Project Visti Button"
+          aria-label="Project Visit Button"
           className={styles.iconLink}
         >
           Visit page

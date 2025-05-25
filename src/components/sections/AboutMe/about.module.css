@@ -7,3 +7,16 @@
   row-gap: 40px;
   max-width: 1000px;
 }
+
+/* Media Queries */
+@media (max-height: 699px) {
+  .sectionWrapper {
+    scroll-margin-top: 50px;
+  }
+}
+
+@media (min-height: 1100px) {
+  .sectionWrapper {
+    scroll-margin-top: 0;
+  }
+}
