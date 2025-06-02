@@ -7,22 +7,32 @@ import { useEffect, useState } from "react";
 export default function LanguageToggle() {
   const router = useRouter();
   const pathname = usePathname();
-  const [isChecked, setIsChecked] = useState(false);
+  const [isChecked, setIsChecked] = useState(pathname.startsWith("/pt"));
+  const [isNavigating, setIsNavigating] = useState(false);
 
   useEffect(() => {
     setIsChecked(pathname.startsWith("/pt"));
   }, [pathname]);
 
   const handleToggle = () => {
-    const newLocale = isChecked ? "en" : "pt";
-    const currentLocale = isChecked ? "pt" : "en";
-    const newPath = pathname.replace(`/${currentLocale}`, `/${newLocale}`);
-
-    if (!pathname.startsWith("/en") && !pathname.startsWith("/pt")) {
-      router.push(`/${newLocale}${pathname}`);
-    } else {
-      router.push(newPath);
+    if (isNavigating) {
+      return;
     }
+    setIsChecked(!isChecked);
+    setIsNavigating(true);
+
+    setTimeout(() => {
+      const newLocale = isChecked ? "en" : "pt";
+      const currentLocale = isChecked ? "pt" : "en";
+      const newPath = pathname.replace(`/${currentLocale}`, `/${newLocale}`);
+
+      if (!pathname.startsWith("/en") && !pathname.startsWith("/pt")) {
+        router.push(`/${newLocale}${pathname}`);
+      } else {
+        router.push(newPath);
+      }
+      setIsNavigating(false);
+    }, 400);
   };
 
   return (
@@ -31,6 +41,7 @@ export default function LanguageToggle() {
         type="checkbox"
         checked={isChecked}
         onChange={handleToggle}
+        disabled={isNavigating}
         aria-label={`Switch to ${isChecked ? "English" : "Portuguese"}`}
       />
       <span className={styles.slider}>

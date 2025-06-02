@@ -4,7 +4,8 @@
     "skills": "Skills",
     "about": "About Me",
     "projects": "Projects",
-    "resume": "My Resume"
+    "resume": "My Resume",
+    "resumeLink": "/Rafael-Mingossi-Resume.pdf"
   },
   "hero": {
     "name": "Rafael Mingossi",

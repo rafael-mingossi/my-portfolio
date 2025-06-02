@@ -63,7 +63,6 @@ export default function Navigation() {
         element.scrollIntoView({ behavior: "smooth" });
       }
     }
-    // Close mobile menu after clicking a link
     setIsOpen(false);
   };
 
@@ -117,11 +116,7 @@ export default function Navigation() {
           })}
         </div>
 
-        <a
-          href="/Rafael-Mingossi-Resume.pdf"
-          download
-          className={styles.actionCta}
-        >
+        <a href={t.navigation.resumeLink} download className={styles.actionCta}>
           {t.navigation.resume}
         </a>
       </div>

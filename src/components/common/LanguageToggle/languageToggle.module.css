@@ -21,7 +21,7 @@
   right: 0;
   bottom: 0;
   background-color: var(--btn-bg);
-  transition: 0.3s;
+  transition: all 0.3s ease;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
@@ -41,7 +41,7 @@
   width: 24px;
   left: 4px;
   background-color: var(--blue-cta);
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s ease;
   border-radius: 12px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   transform: translateX(0);
