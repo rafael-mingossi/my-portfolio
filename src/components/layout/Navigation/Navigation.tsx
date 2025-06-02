@@ -86,7 +86,7 @@ export default function Navigation() {
           </a>
 
           <a
-            href="https://linkedin.com/in/rafaelmingossi"
+            href={t.navigation.linkedinLink}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn Profile"

@@ -5,7 +5,8 @@
     "about": "Sobre Mim",
     "projects": "Projetos",
     "resume": "Meu Currículo",
-    "resumeLink": "/Rafael-Mingossi-Resume-pt.pdf"
+    "resumeLink": "/Rafael-Mingossi-Resume-pt.pdf",
+    "linkedinLink": "https://www.linkedin.com/in/rafaelmingossi/?locale=pt_BR"
   },
   "hero": {
     "name": "Rafael Mingossi",
@@ -19,7 +20,7 @@
     "items": {
       "javascript": {
         "title": "JavaScript",
-        "description": "A linguagem de programação da web para criar experiências dinâmicas e interativas"
+        "description": "Linguagem de programação web para criar experiências dinâmicas e interativas"
       },
       "css": {
         "title": "Css",
