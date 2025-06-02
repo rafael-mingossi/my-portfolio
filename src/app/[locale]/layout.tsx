@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import { Space_Grotesk, Inter } from "next/font/google";
 import "../globals.css";
 import React from "react";
+import { Analytics } from "@vercel/analytics/react";
 import Navigation from "@/components/layout/Navigation/Navigation";
 import styles from "./layout.module.css";
+import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -86,6 +88,8 @@ export default function RootLayout({
       >
         <Navigation />
         <main className={styles.main}>{children}</main>
+        <Analytics />
+        <GoogleAnalytics GA_MEASUREMENT_ID="G-QR2SE3VMQ9" />
       </body>
     </html>
   );
