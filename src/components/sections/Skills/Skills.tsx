@@ -26,74 +26,62 @@ export default function Skills({ id }: SectionProps) {
   const skillsData = [
     {
       title: "JavaScript",
-      description:
-        "The programming language of the web for creating dynamic and interactive experiences",
+      description: t.skills.items.javascript.description,
       icon: <JavaScriptIcon />,
     },
     {
       title: "Css",
-      description:
-        "Styling language for creating responsive layouts and beautiful user interfaces",
+      description: t.skills.items.css.description,
       icon: <CssIcon />,
     },
     {
       title: "Html",
-      description:
-        "Essential markup language for structuring web content and semantic elements",
+      description: t.skills.items.html.description,
       icon: <HtmlIcon />,
     },
     {
       title: "React",
-      description:
-        "JavaScript library for building interactive user interfaces with component-based architecture",
+      description: t.skills.items.react.description,
       icon: <ReactIcon />,
     },
     {
       title: "React Native",
-      description:
-        "Framework for building native mobile applications using React components",
+      description: t.skills.items.reactNative.description,
       icon: <ReactIcon />,
     },
     {
       title: "Next.js",
-      description:
-        "Full-stack React framework for production-ready applications with server-side rendering",
+      description: t.skills.items.nextjs.description,
       icon: <NextJsIcon />,
     },
     {
       title: "TailwindCss",
-      description:
-        "Utility-first CSS framework for rapid UI development with pre-designed classes",
+      description: t.skills.items.tailwind.description,
       icon: <TailwindIcon />,
     },
     {
       title: "Jest",
-      description:
-        "JavaScript testing framework for unit and integration testing with code coverage",
+      description: t.skills.items.jest.description,
       icon: <JestIcon />,
     },
     {
       title: "Sass Css",
-      description:
-        "CSS preprocessor that extends CSS with variables, nesting, and advanced features",
+      description: t.skills.items.sass.description,
       icon: <SassIcon />,
     },
     {
       title: "TypeScript",
-      description:
-        "Typed superset of JavaScript that catches errors early and improves code quality",
+      description: t.skills.items.typescript.description,
       icon: <TypeScriptIcon />,
     },
     {
       title: "PostgresSql",
-      description:
-        "Advanced open-source relational database for handling complex queries and data integrity",
+      description: t.skills.items.postgresql.description,
       icon: <PostgresSqlIcon />,
     },
     {
       title: "GitHub",
-      description:
-        "Version control platform for collaborative code management and project hosting",
+      description: t.skills.items.github.description,
       icon: <GitHubIcon />,
     },
   ];

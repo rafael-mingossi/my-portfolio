@@ -5,7 +5,8 @@
     "about": "About Me",
     "projects": "Projects",
     "resume": "My Resume",
-    "resumeLink": "/Rafael-Mingossi-Resume.pdf"
+    "resumeLink": "/Rafael-Mingossi-Resume.pdf",
+    "linkedinLink": "https://www.linkedin.com/in/rafaelmingossi/"
   },
   "hero": {
     "name": "Rafael Mingossi",
