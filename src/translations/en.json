@@ -1,0 +1,107 @@
+{
+  "navigation": {
+    "home": "Home",
+    "skills": "Skills",
+    "about": "About Me",
+    "projects": "Projects",
+    "resume": "My Resume",
+    "resumeLink": "/Rafael-Mingossi-Resume.pdf"
+  },
+  "hero": {
+    "name": "Rafael Mingossi",
+    "title": "Front-End Developer",
+    "description": "JavaScript specialist with a passion for clean code and pixel-perfect UI, turning complex problems into elegant solutions since 2021."
+  },
+  "skills": {
+    "title": "SKILLS",
+    "subtitle": "specialities",
+    "my": "My",
+    "items": {
+      "javascript": {
+        "title": "JavaScript",
+        "description": "The programming language of the web for creating dynamic and interactive experiences"
+      },
+      "css": {
+        "title": "Css",
+        "description": "Styling language for creating responsive layouts and beautiful user interfaces"
+      },
+      "html": {
+        "title": "Html",
+        "description": "Essential markup language for structuring web content and semantic elements"
+      },
+      "react": {
+        "title": "React",
+        "description": "JavaScript library for building interactive user interfaces with component-based architecture"
+      },
+      "reactNative": {
+        "title": "React Native",
+        "description": "Framework for building native mobile applications using React components"
+      },
+      "nextjs": {
+        "title": "Next.js",
+        "description": "Full-stack React framework for production-ready applications with server-side rendering"
+      },
+      "tailwind": {
+        "title": "TailwindCss",
+        "description": "Utility-first CSS framework for rapid UI development with pre-designed classes"
+      },
+      "jest": {
+        "title": "Jest",
+        "description": "JavaScript testing framework for unit and integration testing with code coverage"
+      },
+      "sass": {
+        "title": "Sass Css",
+        "description": "CSS preprocessor that extends CSS with variables, nesting, and advanced features"
+      },
+      "typescript": {
+        "title": "TypeScript",
+        "description": "Typed superset of JavaScript that catches errors early and improves code quality"
+      },
+      "postgresql": {
+        "title": "PostgresSql",
+        "description": "Advanced open-source relational database for handling complex queries and data integrity"
+      },
+      "github": {
+        "title": "GitHub",
+        "description": "Version control platform for collaborative code management and project hosting"
+      }
+    }
+  },
+  "about": {
+    "title": "ABOUT ME",
+    "subtitle": "long story short",
+    "my": "My",
+    "paragraph1": "Originally from Brazil, where I built a solid career in Finance and Tax for almost 10 years, I realised my true passion lay elsewhere. So my wife and I decided to shake things up – we moved to Australia and have called it home since 2016. Here I found my calling, graduating with a Bachelor's Degree in Information Technology with a major in Web and Mobile Development, which provided the foundation to officially start my career as a developer.",
+    "paragraph2": "Now, I bring a global perspective to my work with over 4 years in the JavaScript ecosystem. I've built my career transforming designs into seamless digital experiences that users love to interact with. My experience extends beyond the front end, working with AWS, GraphQL APIs, and both Shopify and CMS integrations.",
+    "paragraph3": "In my free time, I'm exploring Java to deepen my understanding of OOP paradigms – a journey I'm finding fascinating – and to enhance my back-end development skills. I maintain a continuous learning approach with TypeScript, CSS, and testing frameworks. I approach each project with both technical precision and creative problem-solving, believing that the best interfaces are those users don't even notice they're using."
+  },
+  "projects": {
+    "title": "PROJECTS",
+    "subtitle": "completed work",
+    "my": "My",
+    "techStack": "Tech Stack:",
+    "visitPage": "Visit page",
+    "items": {
+      "embellish": {
+        "title": "Embellish by Rowi",
+        "description": "This project is from one of the customers from my previous job at Atelier. She wanted an e-commerce to sell her products."
+      },
+      "atelierMarketing": {
+        "title": "Atelier Marketing app",
+        "description": "This is the Marketing app that I worked on my previous job at Atelier"
+      },
+      "bvrg": {
+        "title": "Bvrg",
+        "description": "I worked as a freelancer to help with the system design on this app"
+      },
+      "atelierPlatform": {
+        "title": "Atelier Platform",
+        "description": "This is the main platform from my previous job at Atelier, it is currently in Beta for selected customers only"
+      },
+      "starWars": {
+        "title": "Star Wars",
+        "description": "This is a personal project containing the Star Wars API and some cool JavaScript from a long time ago."
+      }
+    }
+  }
+}

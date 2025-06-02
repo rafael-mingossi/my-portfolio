@@ -1,0 +1,107 @@
+{
+  "navigation": {
+    "home": "Início",
+    "skills": "Habilidades",
+    "about": "Sobre Mim",
+    "projects": "Projetos",
+    "resume": "Meu Currículo",
+    "resumeLink": "/Rafael-Mingossi-Resume-pt.pdf"
+  },
+  "hero": {
+    "name": "Rafael Mingossi",
+    "title": "Desenvolvedor Front-End",
+    "description": "Especialista em JavaScript com foco em clean code e UI pixel-perfect, transformando problemas complexos em  grandes soluções desde 2021."
+  },
+  "skills": {
+    "title": "HABILIDADES",
+    "subtitle": "especialidades",
+    "my": "Minhas",
+    "items": {
+      "javascript": {
+        "title": "JavaScript",
+        "description": "A linguagem de programação da web para criar experiências dinâmicas e interativas"
+      },
+      "css": {
+        "title": "Css",
+        "description": "Linguagem de estilização para criar layouts responsivos e interfaces de usuário bonitas"
+      },
+      "html": {
+        "title": "Html",
+        "description": "Linguagem de marcação essencial para estruturar conteúdo web e elementos semânticos"
+      },
+      "react": {
+        "title": "React",
+        "description": "Biblioteca JavaScript para construir interfaces de usuário interativas com arquitetura baseada em componentes"
+      },
+      "reactNative": {
+        "title": "React Native",
+        "description": "Framework para construir aplicações móveis nativas usando componentes React"
+      },
+      "nextjs": {
+        "title": "Next.js",
+        "description": "Framework React full-stack para aplicações prontas para produção com renderização no servidor"
+      },
+      "tailwind": {
+        "title": "TailwindCss",
+        "description": "Framework CSS utility-first para desenvolvimento rápido de UI com classes pré-projetadas"
+      },
+      "jest": {
+        "title": "Jest",
+        "description": "Framework de testes JavaScript para testes unitários e de integração com cobertura de código"
+      },
+      "sass": {
+        "title": "Sass Css",
+        "description": "Pré-processador CSS que estende CSS com variáveis, aninhamento e recursos avançados"
+      },
+      "typescript": {
+        "title": "TypeScript",
+        "description": "Superconjunto tipado de JavaScript que detecta erros precocemente e melhora a qualidade do código"
+      },
+      "postgresql": {
+        "title": "PostgresSql",
+        "description": "Banco de dados relacional open-source avançado para lidar com consultas complexas e integridade de dados"
+      },
+      "github": {
+        "title": "GitHub",
+        "description": "Plataforma de controle de versão para gerenciamento colaborativo de código e hospedagem de projetos"
+      }
+    }
+  },
+  "about": {
+    "title": "SOBRE MIM",
+    "subtitle": "história resumida",
+    "my": "Minha",
+    "paragraph1": "Originalmente do Brasil, onde construí uma carreira sólida em Finanças e Impostos por quase 10 anos, percebi que minha verdadeira paixão estava em outro lugar. Então minha esposa e eu decidimos mudar tudo – nos mudamos para a Austrália e a chamamos de lar desde 2016. Aqui encontrei minha vocação, me formando com um Bacharelado em Tecnologia da Informação com especialização em Desenvolvimento Web e Mobile, que forneceu a base para iniciar oficialmente minha carreira como desenvolvedor.",
+    "paragraph2": "Agora, trago uma perspectiva global para meu trabalho com mais de 4 anos no ecossistema JavaScript. Construí minha carreira transformando designs em experiências digitais perfeitas que os usuários adoram interagir. Minha experiência se estende além do front-end, trabalhando com AWS, APIs GraphQL e integrações tanto com Shopify quanto com CMS.",
+    "paragraph3": "No meu tempo livre, estou explorando Java para aprofundar meu entendimento dos paradigmas OOP – uma jornada que estou achando fascinante – e para aprimorar minhas habilidades de desenvolvimento back-end. Mantenho uma abordagem de aprendizado contínuo com TypeScript, CSS e frameworks de teste. Abordo cada projeto com precisão técnica e resolução criativa de problemas, acreditando que as melhores interfaces são aquelas que os usuários nem percebem que estão usando."
+  },
+  "projects": {
+    "title": "PROJETOS",
+    "subtitle": "trabalhos completos",
+    "my": "Meus",
+    "techStack": "Stack Técnica:",
+    "visitPage": "Visitar página",
+    "items": {
+      "embellish": {
+        "title": "Embellish by Rowi",
+        "description": "Este projeto é de uma das clientes do meu trabalho anterior na Atelier. Ela queria um e-commerce para vender seus produtos."
+      },
+      "atelierMarketing": {
+        "title": "Atelier Marketing app",
+        "description": "Este é o aplicativo de Marketing em que trabalhei no meu emprego anterior na Atelier"
+      },
+      "bvrg": {
+        "title": "Bvrg",
+        "description": "Trabalhei como freelancer para ajudar com o design do sistema neste aplicativo"
+      },
+      "atelierPlatform": {
+        "title": "Atelier Platform",
+        "description": "Esta é a plataforma principal do meu trabalho anterior na Atelier, está atualmente em Beta apenas para clientes selecionados"
+      },
+      "starWars": {
+        "title": "Star Wars",
+        "description": "Este é um projeto pessoal contendo a API Star Wars e algum JavaScript legal de muito tempo atrás."
+      }
+    }
+  }
+}

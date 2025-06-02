@@ -1,0 +1,97 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--btn-bg);
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+}
+
+.slider:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 24px;
+  left: 4px;
+  background-color: var(--blue-cta);
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transform: translateX(0);
+}
+
+input:checked + .slider:before {
+  transform: translateX(28px);
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--dark-gray-txt);
+  transition: color 0.3s ease;
+  z-index: 2;
+  position: relative;
+  font-family: var(--font-space-grotesk);
+  user-select: none;
+  pointer-events: none;
+}
+
+.labelLeft {
+  margin-left: 1px;
+}
+
+.labelRight {
+  margin-right: -2px;
+}
+
+.labelActive {
+  color: var(--white-txt);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .switch {
+    width: 56px;
+    height: 26px;
+  }
+
+  .slider:before {
+    width: 22px;
+    height: 18px;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+
+  .label {
+    font-size: 11px;
+  }
+}

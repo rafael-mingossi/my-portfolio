@@ -1,65 +1,69 @@
+"use client";
+
 import ProjectCard, {
   ProjectCardProps,
 } from "@/components/common/ProjectCard/ProjectCard";
 import styles from "./projects.module.css";
 import SectionHeader from "@/components/common/SectionHeader/SectionHeader";
+import { useTranslation } from "@/hooks/useTranslation";
 
 interface SectionProps {
   id: string;
 }
 
-const projectsData: ProjectCardProps[] = [
-  {
-    title: "Embellish by Rowi",
-    description:
-      "This project is from one of the customers from my previous job at Atelier. She wanted an e-commerce to sell her products.",
-    image: "/proj-rowi.webp",
-    type: "web",
-    techStack: "Next.js | TypeScript | Sass | Sanity CMS | Shopify",
-    link: "https://embellishbyrowi.com/",
-  },
-  {
-    title: "Atelier Marketing app",
-    description:
-      "This is the Marketing app that I worked on my previous job at Atelier",
-    image: "/proj-atelier-mkt.webp",
-    type: "web",
-    techStack: "Next.js | TypeScript | Sass",
-    link: "https://atelier.co/",
-  },
-  {
-    title: "Bvrg",
-    description:
-      "I worked as a freelancer to help with the system design on this app",
-    image: "/proj-bvrg.webp",
-    type: "web",
-    techStack: "Next.js | TypeScript | Zustand | Tailwind",
-    link: "https://www.bvrg.com.au/",
-  },
-  {
-    title: "Atelier Platform",
-    description:
-      "This is the main platform from my previous job at Atelier, it is currently in Beta for selected customers only",
-    image: "/proj-atelier.webp",
-    type: "web",
-    techStack: "Next.js | TypeScript | Sass | AWS",
-    link: "https://platform.atelier.co/",
-  },
-  {
-    title: "Star Wars",
-    description:
-      "This is a personal project containing the Star Wars API and some cool JavaScript from a long time ago.",
-    image: "/proj-star-wars.webp",
-    type: "web",
-    techStack: "Next.js | CSS",
-    link: "https://mammoth-eight.vercel.app/",
-  },
-];
-
 export default function Projects({ id }: SectionProps) {
+  const { t } = useTranslation();
+
+  const projectsData: ProjectCardProps[] = [
+    {
+      title: t.projects.items.embellish.title,
+      description: t.projects.items.embellish.description,
+      image: "/proj-rowi.webp",
+      type: "web",
+      techStack: "Next.js | TypeScript | Sass | Sanity CMS | Shopify",
+      link: "https://embellishbyrowi.com/",
+    },
+    {
+      title: t.projects.items.atelierMarketing.title,
+      description: t.projects.items.atelierMarketing.description,
+      image: "/proj-atelier-mkt.webp",
+      type: "web",
+      techStack: "Next.js | TypeScript | Sass",
+      link: "https://atelier.co/",
+    },
+    {
+      title: t.projects.items.bvrg.title,
+      description: t.projects.items.bvrg.description,
+      image: "/proj-bvrg.webp",
+      type: "web",
+      techStack: "Next.js | TypeScript | Zustand | Tailwind",
+      link: "https://www.bvrg.com.au/",
+    },
+    {
+      title: t.projects.items.atelierPlatform.title,
+      description: t.projects.items.atelierPlatform.description,
+      image: "/proj-atelier.webp",
+      type: "web",
+      techStack: "Next.js | TypeScript | Sass | AWS",
+      link: "https://platform.atelier.co/",
+    },
+    {
+      title: t.projects.items.starWars.title,
+      description: t.projects.items.starWars.description,
+      image: "/proj-star-wars.webp",
+      type: "web",
+      techStack: "Next.js | CSS",
+      link: "https://mammoth-eight.vercel.app/",
+    },
+  ];
+
   return (
     <section id={id} className={styles.sectionWrapper}>
-      <SectionHeader title="PROJECTS" subtitle="completed work" />
+      <SectionHeader
+        title={t.projects.title}
+        subtitle={t.projects.subtitle}
+        my={t.projects.my}
+      />
       <div className={styles.cardsWrapper}>
         {projectsData.map((project, index) => (
           <ProjectCard
