@@ -59,7 +59,11 @@ export default function Projects({ id }: SectionProps) {
 
   return (
     <section id={id} className={styles.sectionWrapper}>
-      <SectionHeader title={t.projects.title} subtitle={t.projects.subtitle} />
+      <SectionHeader
+        title={t.projects.title}
+        subtitle={t.projects.subtitle}
+        my={t.projects.my}
+      />
       <div className={styles.cardsWrapper}>
         {projectsData.map((project, index) => (
           <ProjectCard

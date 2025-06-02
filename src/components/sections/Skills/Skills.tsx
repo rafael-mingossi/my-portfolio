@@ -100,7 +100,11 @@ export default function Skills({ id }: SectionProps) {
 
   return (
     <section id={id} className={styles.sectionWrapper}>
-      <SectionHeader title="SKILLS" subtitle="specialities" />
+      <SectionHeader
+        title={t.skills.title}
+        subtitle={t.skills.subtitle}
+        my={t.skills.my}
+      />
 
       <div className={styles.cardsWrapper}>
         {skillsData.map((skill, index) => (

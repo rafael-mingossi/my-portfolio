@@ -13,7 +13,11 @@ export default function AboutMe({ id }: SectionProps) {
 
   return (
     <section id={id} className={styles.sectionWrapper}>
-      <SectionHeader title={t.about.title} subtitle={t.about.subtitle} />
+      <SectionHeader
+        title={t.about.title}
+        subtitle={t.about.subtitle}
+        my={t.about.my}
+      />
       <p>
         {t.about.paragraph1}
         <br />
