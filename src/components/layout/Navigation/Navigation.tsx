@@ -5,17 +5,20 @@ import styles from "./navigation.module.css";
 import React, { useEffect, useState } from "react";
 import GitHubIcon from "@/components/common/icons/GitHubIcon";
 import LinkedInIcon from "@/components/common/icons/LinkedInIcon";
-
-const navigationItems = [
-  { href: "#home", label: "Home" },
-  { href: "#skills", label: "Skills" },
-  { href: "#about", label: "About Me" },
-  { href: "#projects", label: "Projects" },
-];
+import LanguageToggle from "@/components/common/LanguageToggle/LanguageToggle";
+import { useTranslation } from "@/hooks/useTranslation";
 
 export default function Navigation() {
   const [activeSection, setActiveSection] = useState("home");
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation();
+
+  const navigationItems = [
+    { href: "#home", label: t.navigation.home },
+    { href: "#skills", label: t.navigation.skills },
+    { href: "#about", label: t.navigation.about },
+    { href: "#projects", label: t.navigation.projects },
+  ];
 
   useEffect(() => {
     const options = {
@@ -92,6 +95,8 @@ export default function Navigation() {
           >
             <LinkedInIcon width={20} height={20} />
           </a>
+
+          <LanguageToggle />
         </div>
 
         <div className={styles.linksWrapper}>
@@ -117,7 +122,7 @@ export default function Navigation() {
           download
           className={styles.actionCta}
         >
-          My Resume
+          {t.navigation.resume}
         </a>
       </div>
 
@@ -159,6 +164,7 @@ export default function Navigation() {
               >
                 <LinkedInIcon width={24} height={24} />
               </a>
+              <LanguageToggle />
             </div>
           </div>
 
@@ -181,7 +187,7 @@ export default function Navigation() {
             download
             className={styles.mobileActionCta}
           >
-            My Resume
+            {t.navigation.resume}
           </a>
         </div>
       </div>

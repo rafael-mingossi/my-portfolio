@@ -1,11 +1,14 @@
+"use client";
 import styles from "./hero.module.css";
 import Image from "next/image";
+import { useTranslation } from "@/hooks/useTranslation";
 
 interface SectionProps {
   id: string;
 }
 
 export default function Hero({ id }: SectionProps) {
+  const { t } = useTranslation();
   return (
     <section id={id} className={styles.heroWrapper}>
       <div className={styles.fakeBox1} />
@@ -13,14 +16,10 @@ export default function Hero({ id }: SectionProps) {
         <div className={styles.leftContent}>
           <span>
             <h1 className={styles.h1}>Rafael Mingossi</h1>
-            <h2 className={styles.h2}>Front-End Developer</h2>
+            <h2 className={styles.h2}>{t.hero.title}</h2>
           </span>
           <span>
-            <p>
-              JavaScript specialist with a passion for clean code and
-              pixel-perfect UI, turning complex problems into elegant solutions
-              since 2021.
-            </p>
+            <p>{t.hero.description}</p>
           </span>
         </div>
 
